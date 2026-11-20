@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Практичне завдання №1</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    .main {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 100vh;
+    }
+
+    .block {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      border: 1px solid #cccccc;
+    }
+
+    @media (max-width: 1199px) {
+      .block1 {
+        width: 100%;
+        height: 33.3333%;
+        background-color: #4f81bd;
+        color: #ffffff;
+      }
+
+      .block2 {
+        width: 100%;
+        height: 33.3333%;
+        background-color: #ffc000;
+        color: #ffffff;
+      }
+
+      .block3 {
+        width: 100%;
+        height: 33.3333%;
+        background-color: #c00000;
+        color: #ffffff;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .block1 {
+        width: 100%;
+        height: 50%;
+        background-color: #4f81bd;
+        color: #ffffff;
+      }
+
+      .block2 {
+        width: 50%;
+        height: 50%;
+        background-color: #ffc000;
+        color: #ffffff;
+      }
+
+      .block3 {
+        width: 50%;
+        height: 50%;
+        background-color: #c00000;
+        color: #ffffff;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="block block1">#1</div>
+    <div class="block block2">#2</div>
+    <div class="block block3">#3</div>
+  </div>
+</body>
+</html>
